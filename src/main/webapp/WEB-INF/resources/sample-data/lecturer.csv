@@ -1,0 +1,4 @@
+key,almaMater,resume,qualifications,furtherInformation,key:userAccount
+lecturer-01,Universisdad de Sevilla,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",,user-account-administrator-01
+lecturer-02,"A","A","A","https://www.us.es/",user-account-administrator-01
+lecturer-03,"Technische Universiteit Eindhoven","A lengthy and well written resume","A concise summary of my qualifications","https://www.tue.nl/",user-account-administrator-01
