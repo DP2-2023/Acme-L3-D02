@@ -40,15 +40,15 @@ public class Course extends AbstractEntity {
 	@Length(max = 100)
 	protected String			abstractSummary;
 
+	@Valid
+	public CourseType			courseType;
+
 	@NotNull
 	@Valid
 	protected Money				price;
 
 	@URL
 	protected String			furtherInformation;
-
-	@Valid
-	public CourseType			courseType;
 
 	// Derived attributes -----------------------------------------------------
 
