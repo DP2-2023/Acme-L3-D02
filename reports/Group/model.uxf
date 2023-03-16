@@ -148,7 +148,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Peep
 --
-+ moment: Date {Past, Temporarl(TIMESTAMP)}
++ moment: Date {Past, Temporal(TIMESTAMP)}
 + title: String {NotBlank}
 + nick: String {NotBlank}
 + message: String {NotBlank}
@@ -169,7 +169,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Bulletin
 --
-+ moment: Date {Past, Temporarl(TIMESTAMP)}
++ moment: Date {Past, Temporal(TIMESTAMP)}
 + title: String {NotBlank}
 + message: String {NotBlank}
 + isCritical: boolean
@@ -189,7 +189,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Offer
 --
-+ moment: Date {Past, Temporarl(TIMESTAMP)}
++ moment: Date {Past, Temporal(TIMESTAMP)}
 + heading: String {NotBlank}
 + summary: String {NotBlank}
 + availabilityStartDate: Date
@@ -211,7 +211,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Note
 --
-+ moment: Date {Past, Temporarl(TIMESTAMP)}
++ moment: Date {Past, Temporal(TIMESTAMP)}
 + message: String {NotBlank}
 + email: String {Email}
 - link: String {URL}
@@ -231,7 +231,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Banner
 --
-+ moment: Date {Past, Temporarl(TIMESTAMP)}
++ moment: Date {Past, Temporal(TIMESTAMP)}
 + displayStartDate: Date
 + displayEndDate: Date
 + pictureLink: String {URL}
