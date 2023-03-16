@@ -32,11 +32,11 @@ public class Bulletins extends AbstractEntity {
 	protected Date				moment;
 
 	@NotBlank
-	@Length(max = 76)//@Length(min=1, max = 76)
+	@Length(max = 75)
 	protected String			title;
 
 	@NotBlank
-	@Length(max = 101)//mirar si habría que poner min y si seria 100, 101 o 102
+	@Length(max = 100)
 	protected String			message;
 
 	protected Boolean			critical;

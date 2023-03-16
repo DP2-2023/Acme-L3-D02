@@ -6,7 +6,6 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
@@ -34,19 +33,17 @@ public class Offers extends AbstractEntity {
 	protected Date				moment;
 
 	@NotBlank
-	@Length(max = 76)//@Length(min=1, max = 76)
+	@Length(max = 75)
 	protected String			heading;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			summary;
 
-	@Future
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE) // o TemporalType.TIMESTAMP, porque se refiere solo a días en principio
 	protected Date				fechaInicioOferta;
 
-	@Future
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE) //OfferEndDate o EndDateOffer?
 	protected Date				fechaFinalOferta;
 
 	@Min(0)
