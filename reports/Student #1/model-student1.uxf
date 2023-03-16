@@ -63,7 +63,7 @@ Course
 --
 + code: String {NotBlank, Pattern("[A-Z]{1,3} [0-9]{3}")}
 + title: String {NotBlank}
-+ abstract: String {NotBlank}
++ abstract$: String {NotBlank}
 + / type: courseType
 + price: double {Min(0)}
 - furtherInformation: String {URL}
@@ -82,7 +82,7 @@ bg=green</panel_attributes>
 Lecture
 --
 + title: String {NotBlank}
-+ abstract: String {NotBlank}
++ abstract$: String {NotBlank}
 + learningTime: double {NotZero}
 + body: String {NotBlank}
 + type: lectureType

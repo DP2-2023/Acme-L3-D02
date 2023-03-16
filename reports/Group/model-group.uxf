@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1029</x>
+      <x>1001</x>
       <y>217</y>
       <w>70</w>
       <h>42</h>
@@ -17,7 +17,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1029</x>
+      <x>1001</x>
       <y>161</y>
       <w>70</w>
       <h>42</h>
@@ -30,7 +30,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1029</x>
+      <x>1001</x>
       <y>266</y>
       <w>70</w>
       <h>42</h>
@@ -43,7 +43,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
+      <x>924</x>
       <y>182</y>
       <w>91</w>
       <h>63</h>
@@ -54,7 +54,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
+      <x>924</x>
       <y>224</y>
       <w>91</w>
       <h>21</h>
@@ -65,7 +65,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
+      <x>924</x>
       <y>224</y>
       <w>91</w>
       <h>63</h>
@@ -76,7 +76,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>854</x>
+      <x>826</x>
       <y>210</y>
       <w>105</w>
       <h>42</h>
@@ -89,7 +89,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
+      <x>497</x>
       <y>0</y>
       <w>98</w>
       <h>35</h>
@@ -103,7 +103,7 @@ bg=white
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
+      <x>539</x>
       <y>28</y>
       <w>21</w>
       <h>56</h>
@@ -114,21 +114,21 @@ bg=white
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>406</x>
       <y>70</y>
-      <w>238</w>
+      <w>280</w>
       <h>161</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 administratorDashboard
 --
-+ totalNumberOfPrincipalsPerRole: int
++ totalNumberOfPrincipalsPerRole: Map&lt;String,Integer&gt;
 + ratioOfPeepsWithEmailAndLink: double
 + ratioOfCriticalAndNonCriticalBulletins: double
-+ averageBudgetPerOfferPerCurrency: Money
-+ minimumBudgetPerOfferPerCurrency: Money
-+ maximumBudgetPerOfferPerCurrency: Money
-+ deviationBudgetPerOfferPerCurrency: Money
++ averageBudgetPerOfferPerCurrency: Map&lt;String,Double&gt;
++ minimumBudgetPerOfferPerCurrency: Map&lt;String,Double&gt;
++ maximumBudgetPerOfferPerCurrency: Map&lt;String,Double&gt;
++ deviationBudgetPerOfferPerCurrency: Map&lt;String,Double&gt;
 + averageNumberOfNotesLastTenWeeks: double
 + minimumNumberOfNotesLastTenWeeks: double
 + maximumNumberOfNotesLastTenWeeks: double
@@ -140,7 +140,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>441</x>
       <y>245</y>
       <w>224</w>
       <h>105</h>
@@ -161,7 +161,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>441</x>
       <y>364</y>
       <w>224</w>
       <h>91</h>
@@ -181,7 +181,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>441</x>
       <y>469</y>
       <w>224</w>
       <h>112</h>
@@ -203,7 +203,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>441</x>
       <y>595</y>
       <w>224</w>
       <h>91</h>
@@ -223,7 +223,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>231</x>
+      <x>203</x>
       <y>245</y>
       <w>224</w>
       <h>105</h>
@@ -244,7 +244,7 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
+      <x>385</x>
       <y>525</y>
       <w>70</w>
       <h>21</h>
@@ -255,7 +255,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>315</x>
+      <x>287</x>
       <y>504</y>
       <w>105</w>
       <h>49</h>
@@ -269,7 +269,7 @@ Price must be positive</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>224</x>
+      <x>196</x>
       <y>609</y>
       <w>196</w>
       <h>98</h>
@@ -289,7 +289,7 @@ full name.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
+      <x>385</x>
       <y>651</y>
       <w>70</w>
       <h>21</h>
