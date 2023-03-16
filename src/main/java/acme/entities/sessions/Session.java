@@ -1,6 +1,7 @@
 
 package acme.entities.sessions;
 
+import java.beans.Transient;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -36,23 +37,39 @@ public class Session extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			goals;
+	protected String			abstract$;
 
-	@Temporal(TemporalType.DATE)
-	protected Date				fechaInicioSession;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				sessionStartDate;
 
-	@Temporal(TemporalType.DATE)
-	protected Date				fechaFinalSession;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				sessionEndDate;
 
 	@URL
 	protected String			link;
 
 	// Derived attributes -----------------------------------------------------
 
+
+	@Transient
+	public Double getPeriod() {
+
+		final Double period;
+
+		//en milisegundos
+		final long diferencia = this.sessionEndDate.getTime() - this.sessionStartDate.getTime();
+
+		//en dias 
+		period = (double) (diferencia / (1000 * 60 * 60 * 24));
+
+		return period;
+	}
+
 	// Relationships ----------------------------------------------------------
+
 
 	@Valid
 	@NotNull
 	@ManyToOne(optional = false)
-	protected Practicum			practicum;
+	protected Practicum practicum;
 }

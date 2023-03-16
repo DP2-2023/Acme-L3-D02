@@ -1,5 +1,7 @@
 
-package acme.forms.companyDashboard;
+package acme.forms;
+
+import java.util.List;
 
 import acme.framework.data.AbstractForm;
 import lombok.Getter;
@@ -15,7 +17,7 @@ public class CompanyDashboard extends AbstractForm {
 
 	// Attributes -------------------------------------------------------------
 
-	Integer						totalNumberOfPracticumPerMonth;
+	List<Integer>				totalNumberOfPracticumPerMonth;
 	Double						averageNumberOfPeriodLengthPerSession;
 	Double						deviationNumberOfPeriodLengthPerSession;
 	Double						minimumNumberOfPeriodLengthPerSession;

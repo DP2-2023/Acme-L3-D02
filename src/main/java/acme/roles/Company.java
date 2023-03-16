@@ -28,7 +28,7 @@ public class Company extends AbstractRole {
 
 	@NotBlank
 	@Length(max = 25)
-	protected String			VATnumber;
+	protected String			vatNumber;
 
 	@NotBlank
 	@Length(max = 100)
