@@ -2,144 +2,10 @@
 <diagram program="umlet" version="15.0.0">
   <zoom_level>7</zoom_level>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>602</x>
-      <y>385</y>
-      <w>21</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>735</x>
-      <y>357</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Administrator
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>735</x>
-      <y>301</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Anonymous
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>735</x>
-      <y>406</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Authenticated
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>658</x>
-      <y>322</y>
-      <w>91</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>658</x>
-      <y>364</y>
-      <w>91</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>658</x>
-      <y>364</y>
-      <w>91</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;110.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>511</x>
-      <y>469</y>
-      <w>189</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Lecturer
---
-+ almaMater: String {NotBlank}
-+ resume: String {NotBlank}
-+ qualifications: List&lt;String&gt; {NotBlank}
-- furtherInformation: String {URL}
-bg=green</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>560</x>
-      <y>350</y>
-      <w>105</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-AbstractUserRole
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>182</x>
-      <y>455</y>
-      <w>189</w>
-      <h>105</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Lecture
---
-+ title: String {NotBlank}
-+ abstract: String {NotBlank}
-+ learningTime: double {NotZero}
-+ body: String {NotBlank}
-+ type: lectureType
-- furtherInformation: String {URL}
-bg=green</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>238</x>
-      <y>28</y>
+      <x>343</x>
+      <y>0</y>
       <w>98</w>
       <h>35</h>
     </coordinates>
@@ -152,8 +18,8 @@ bg=white
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>161</x>
-      <y>98</y>
+      <x>266</x>
+      <y>70</y>
       <w>245</w>
       <h>147</h>
     </coordinates>
@@ -176,8 +42,8 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>56</y>
+      <x>385</x>
+      <y>28</y>
       <w>21</w>
       <h>56</h>
     </coordinates>
@@ -187,8 +53,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>154</x>
-      <y>280</y>
+      <x>259</x>
+      <y>273</y>
       <w>259</w>
       <h>112</h>
     </coordinates>
@@ -205,23 +71,30 @@ bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLClass</id>
     <coordinates>
-      <x>273</x>
-      <y>385</y>
-      <w>35</w>
-      <h>84</h>
+      <x>287</x>
+      <y>567</y>
+      <w>189</w>
+      <h>105</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-x
-m1=1..*
-m2=1..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Lecture
+--
++ title: String {NotBlank}
++ abstract: String {NotBlank}
++ learningTime: double {NotZero}
++ body: String {NotBlank}
++ type: lectureType
+- furtherInformation: String {URL}
+bg=green</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>364</x>
-      <y>504</y>
+      <x>469</x>
+      <y>616</y>
       <w>161</w>
       <h>35</h>
     </coordinates>
@@ -232,10 +105,39 @@ Registered by &gt;</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>581</y>
+      <w>189</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Lecturer
+--
++ almaMater: String {NotBlank}
++ resume: String {NotBlank}
++ qualifications: List&lt;String&gt; {NotBlank}
+- furtherInformation: String {URL}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>203</x>
+      <y>322</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>0</x>
-      <y>308</y>
+      <x>105</x>
+      <y>301</y>
       <w>105</w>
       <h>49</h>
     </coordinates>
@@ -246,14 +148,44 @@ Price must be positive</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>448</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CourseLecture
+--
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>Relation</id>
     <coordinates>
-      <x>98</x>
-      <y>329</y>
-      <w>70</w>
-      <h>21</h>
+      <x>371</x>
+      <y>378</y>
+      <w>35</w>
+      <h>84</h>
     </coordinates>
-    <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+    <panel_attributes>lt=x-&gt;
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>371</x>
+      <y>504</y>
+      <w>35</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
 </diagram>
