@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>343</x>
+      <x>420</x>
       <y>0</y>
-      <w>98</w>
-      <h>35</h>
+      <w>84</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Serializable
@@ -18,10 +18,10 @@ bg=white
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>266</x>
-      <y>70</y>
-      <w>245</w>
-      <h>147</h>
+      <x>354</x>
+      <y>60</y>
+      <w>210</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 lecturerDashboard
@@ -42,10 +42,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>28</y>
-      <w>21</w>
-      <h>56</h>
+      <x>456</x>
+      <y>24</y>
+      <w>18</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -53,10 +53,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>259</x>
-      <y>273</y>
-      <w>259</w>
-      <h>112</h>
+      <x>348</x>
+      <y>234</y>
+      <w>222</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Course
@@ -73,10 +73,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>287</x>
-      <y>567</y>
-      <w>189</w>
-      <h>105</h>
+      <x>372</x>
+      <y>486</y>
+      <w>162</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Lecture
@@ -93,10 +93,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>469</x>
-      <y>616</y>
-      <w>161</w>
-      <h>35</h>
+      <x>528</x>
+      <y>528</y>
+      <w>138</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..*
@@ -107,12 +107,12 @@ Registered by &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
-      <y>581</y>
-      <w>189</w>
-      <h>84</h>
+      <x>654</x>
+      <y>498</y>
+      <w>162</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
 Lecturer
 --
 + almaMater: String {NotBlank}
@@ -125,10 +125,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
-      <y>322</y>
-      <w>70</w>
-      <h>21</h>
+      <x>300</x>
+      <y>276</y>
+      <w>60</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
@@ -136,10 +136,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>105</x>
-      <y>301</y>
-      <w>105</w>
-      <h>49</h>
+      <x>216</x>
+      <y>258</y>
+      <w>90</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Note..
 bg=blue
@@ -150,10 +150,10 @@ Price must be positive</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>301</x>
-      <y>448</y>
-      <w>154</w>
-      <h>63</h>
+      <x>384</x>
+      <y>384</y>
+      <w>132</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 CourseLecture
@@ -165,10 +165,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
-      <y>378</y>
-      <w>35</w>
-      <h>84</h>
+      <x>444</x>
+      <y>324</y>
+      <w>30</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..*
@@ -178,14 +178,49 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
-      <y>504</y>
-      <w>35</w>
-      <h>77</h>
+      <x>444</x>
+      <y>432</y>
+      <w>30</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..*
 m2=1</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>234</y>
+      <w>96</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+CourseType
+--
++ THEORETICAL
++ HANDS_ON
++ BALANCED
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>306</y>
+      <w>96</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+LectureType
+--
++ THEORETICAL
++ HANDS_ON
+bg=green
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
