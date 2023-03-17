@@ -1,25 +1,29 @@
 
-package acme.entities.lectures;
+package acme.entities.practicumSessions;
+
+import java.beans.Transient;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.practicums.Practicum;
 import acme.framework.data.AbstractEntity;
-import acme.roles.Lecturer;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Lecture extends AbstractEntity {
+public class PracticumSession extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -35,25 +39,37 @@ public class Lecture extends AbstractEntity {
 	@Length(max = 100)
 	protected String			abstract$;
 
-	@Positive
-	protected double			learningTime;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				sessionStartDate;
 
-	@NotBlank
-	@Length(max = 100)
-	protected String			body;
-
-	protected LectureType		type;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				sessionEndDate;
 
 	@URL
-	protected String			furtherInformation;
+	protected String			link;
 
 	// Derived attributes -----------------------------------------------------
 
+
+	@Transient
+	public Double getPeriod() {
+
+		final Double period;
+
+		//en milisegundos
+		final long diferencia = this.sessionEndDate.getTime() - this.sessionStartDate.getTime();
+
+		//en dias 
+		period = (double) (diferencia / (1000 * 60 * 60 * 24));
+
+		return period;
+	}
+
 	// Relationships ----------------------------------------------------------
 
-	@NotNull
-	@Valid
-	@ManyToOne(optional = false)
-	protected Lecturer			lecturer;
 
+	@Valid
+	@NotNull
+	@ManyToOne(optional = false)
+	protected Practicum practicum;
 }

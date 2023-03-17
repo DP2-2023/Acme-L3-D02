@@ -38,7 +38,7 @@ public class Course extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			abstractSummary;
+	protected String			abstract$;
 
 	@Valid
 	public CourseType			courseType;

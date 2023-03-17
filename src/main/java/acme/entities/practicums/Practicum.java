@@ -1,31 +1,37 @@
 
-package acme.entities.lectures;
+package acme.entities.practicums;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.URL;
 
+import acme.entities.courses.Course;
 import acme.framework.data.AbstractEntity;
-import acme.roles.Lecturer;
+import acme.roles.Company;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Lecture extends AbstractEntity {
+public class Practicum extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
 	protected static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
+
+	@Column(unique = true)
+	@NotBlank
+	@Pattern(regexp = "[A-Z]{1,3}[0-9][0-9]{3}", message = "{validation.practicum.code}")
+	protected String			code;
 
 	@NotBlank
 	@Length(max = 75)
@@ -35,17 +41,11 @@ public class Lecture extends AbstractEntity {
 	@Length(max = 100)
 	protected String			abstract$;
 
-	@Positive
-	protected double			learningTime;
-
 	@NotBlank
 	@Length(max = 100)
-	protected String			body;
+	protected String			goals;
 
-	protected LectureType		type;
-
-	@URL
-	protected String			furtherInformation;
+	protected Double			estimatedTotalTime;
 
 	// Derived attributes -----------------------------------------------------
 
@@ -54,6 +54,10 @@ public class Lecture extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	protected Lecturer			lecturer;
+	protected Course			course;
 
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	protected Company			company;
 }
