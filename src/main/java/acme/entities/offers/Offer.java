@@ -1,13 +1,13 @@
 
-package acme.entities.bulletins;
+package acme.entities.offers;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Bulletins extends AbstractEntity {
+public class Offer extends AbstractEntity {
 
 	//Serialisation identifier-----------------------------------------
 
@@ -34,14 +34,20 @@ public class Bulletins extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 75)
-	protected String			title;
+	protected String			heading;
 
 	@NotBlank
-	@Length(max = 100)
-	protected String			message;
+	@Length(max = 75)
+	protected String			summary;
 
-	@NotNull
-	protected Boolean			critical;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				offerStartDate;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				offerEndDate;
+
+	@Min(0)
+	protected Double			price;
 
 	@URL
 	protected String			link;
@@ -49,4 +55,5 @@ public class Bulletins extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
+
 }
