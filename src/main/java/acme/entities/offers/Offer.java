@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
@@ -53,6 +54,21 @@ public class Offer extends AbstractEntity {
 	protected String			link;
 
 	// Derived attributes -----------------------------------------------------
+
+
+	@Transient
+	public Double getPeriod() {
+
+		final Double period;
+
+		//en milisegundos
+		final long diferencia = this.offerEndDate.getTime() - this.offerStartDate.getTime();
+
+		//en dias 
+		period = (double) (diferencia / (1000 * 60 * 60 * 24));
+
+		return period;
+	}
 
 	// Relationships ----------------------------------------------------------
 
