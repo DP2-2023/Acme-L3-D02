@@ -29,7 +29,10 @@ public class Banner extends AbstractEntity {
 	protected Date				moment;
 
 	@NotNull
-	protected Date				display;
+	protected Date				displayPeriodStart;
+
+	@NotNull
+	protected Date				displayPeriodEnd;
 
 	@NotBlank
 	@URL

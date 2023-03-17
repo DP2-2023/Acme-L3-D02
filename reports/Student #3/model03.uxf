@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>516</x>
-      <y>186</y>
+      <x>444</x>
+      <y>18</y>
       <w>222</w>
       <h>66</h>
     </coordinates>
@@ -14,7 +14,7 @@
 Assistant
 --
 + supervisor: String {NotBlank, Length(0, 75)}
-+ sector: String {NotBlank, Length(0, 100)}
++ expertiseFields: String {NotBlank, Length(0, 100)}
 + resume: String {NotBlank, Length(0, 100)}
 + furtherInformation: String {URL}</panel_attributes>
     <additional_attributes/>
@@ -22,8 +22,8 @@ Assistant
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>372</x>
-      <y>312</y>
+      <x>300</x>
+      <y>144</y>
       <w>222</w>
       <h>66</h>
     </coordinates>
@@ -40,14 +40,14 @@ Tutorial
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>294</x>
-      <y>426</y>
+      <x>222</x>
+      <y>258</y>
       <w>222</w>
       <h>84</h>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
-Sessions
+TutorialSession
 --
 + title: String {NotBlank, Length(0, 75)}
 + resume: String {NotBlank, Length(0, 100)}
@@ -60,8 +60,8 @@ Sessions
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>72</x>
-      <y>180</y>
+      <x>0</x>
+      <y>12</y>
       <w>270</w>
       <h>114</h>
     </coordinates>
@@ -83,8 +83,8 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>372</y>
+      <x>408</x>
+      <y>204</y>
       <w>30</w>
       <h>66</h>
     </coordinates>
@@ -96,8 +96,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>606</x>
-      <y>372</y>
+      <x>534</x>
+      <y>204</y>
       <w>72</w>
       <h>60</h>
     </coordinates>
@@ -111,8 +111,8 @@ Course
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>342</y>
+      <x>516</x>
+      <y>174</y>
       <w>66</w>
       <h>42</h>
     </coordinates>
@@ -124,8 +124,8 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>246</y>
+      <x>468</x>
+      <y>78</y>
       <w>30</w>
       <h>78</h>
     </coordinates>

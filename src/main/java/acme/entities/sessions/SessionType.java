@@ -1,5 +1,5 @@
 
-package acme.datatypes.sessions;
+package acme.entities.sessions;
 
 public enum SessionType {
 	THEORYSESSION, HANDSONSESSION

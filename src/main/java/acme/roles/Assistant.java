@@ -27,7 +27,7 @@ public class Assistant extends AbstractRole {
 
 	@NotBlank
 	@Length(min = 0, max = 100)
-	protected String			sector;
+	protected String			expertiseFields;
 
 	@NotBlank
 	@Length(min = 0, max = 100)
