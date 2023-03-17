@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1001</x>
-      <y>217</y>
-      <w>70</w>
-      <h>42</h>
+      <x>1408</x>
+      <y>341</y>
+      <w>110</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Administrator
@@ -17,10 +17,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1001</x>
-      <y>161</y>
-      <w>70</w>
-      <h>42</h>
+      <x>1408</x>
+      <y>253</y>
+      <w>110</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Anonymous
@@ -30,10 +30,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1001</x>
-      <y>266</y>
-      <w>70</w>
-      <h>42</h>
+      <x>1408</x>
+      <y>418</y>
+      <w>110</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Authenticated
@@ -43,10 +43,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>924</x>
-      <y>182</y>
-      <w>91</w>
-      <h>63</h>
+      <x>1287</x>
+      <y>286</y>
+      <w>143</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;110.0;10.0</additional_attributes>
@@ -54,10 +54,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>924</x>
-      <y>224</y>
-      <w>91</w>
-      <h>21</h>
+      <x>1287</x>
+      <y>352</y>
+      <w>143</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
@@ -65,10 +65,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>924</x>
-      <y>224</y>
-      <w>91</w>
-      <h>63</h>
+      <x>1287</x>
+      <y>352</y>
+      <w>143</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;110.0;70.0</additional_attributes>
@@ -76,10 +76,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>210</y>
-      <w>105</w>
-      <h>42</h>
+      <x>1133</x>
+      <y>330</y>
+      <w>165</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 AbstractUserRole
@@ -89,10 +89,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>497</x>
+      <x>616</x>
       <y>0</y>
-      <w>98</w>
-      <h>35</h>
+      <w>154</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Serializable
@@ -103,10 +103,10 @@ bg=white
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
-      <y>28</y>
-      <w>21</w>
-      <h>56</h>
+      <x>682</x>
+      <y>44</y>
+      <w>33</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -114,10 +114,10 @@ bg=white
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>406</x>
-      <y>70</y>
-      <w>280</w>
-      <h>161</h>
+      <x>473</x>
+      <y>110</y>
+      <w>440</w>
+      <h>253</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 administratorDashboard
@@ -140,10 +140,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>245</y>
-      <w>224</w>
-      <h>105</h>
+      <x>528</x>
+      <y>385</y>
+      <w>352</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Peep
@@ -161,10 +161,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>364</y>
-      <w>224</w>
-      <h>91</h>
+      <x>528</x>
+      <y>572</y>
+      <w>352</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Bulletin
@@ -172,7 +172,7 @@ Bulletin
 + moment: Date {Past, Temporal(TIMESTAMP)}
 + title: String {NotBlank}
 + message: String {NotBlank}
-+ isCritical: boolean
++ critical: boolean
 - link: String {URL}
 
 bg=green</panel_attributes>
@@ -181,10 +181,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>469</y>
-      <w>224</w>
-      <h>112</h>
+      <x>528</x>
+      <y>737</y>
+      <w>352</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Offer
@@ -192,10 +192,11 @@ Offer
 + moment: Date {Past, Temporal(TIMESTAMP)}
 + heading: String {NotBlank}
 + summary: String {NotBlank}
-+ availabilityStartDate: Date
-+ availabilityEndDate: Date
++ offerStartDate: Date
++ offerEndDate: Date
 + price: Money
 + link: String {URL}
++ / getPeriod: double
 
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -203,19 +204,20 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>595</y>
-      <w>224</w>
-      <h>91</h>
+      <x>528</x>
+      <y>968</y>
+      <w>352</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Note
 --
 + moment: Date {Past, Temporal(TIMESTAMP)}
++ title: String {NotBlank}
++ author: String {NotBlank}
 + message: String {NotBlank}
 + email: String {Email}
 - link: String {URL}
-+ / author: String {NotBlank}
 
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -223,20 +225,21 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>203</x>
-      <y>245</y>
-      <w>224</w>
-      <h>105</h>
+      <x>154</x>
+      <y>385</y>
+      <w>352</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Banner
 --
 + moment: Date {Past, Temporal(TIMESTAMP)}
-+ displayStartDate: Date
-+ displayEndDate: Date
-+ pictureLink: String {URL}
++ displayPeriodStart: Date
++ displayPeriodEnd: Date
++ linkPicture: String {URL}
 + slogan: String {NotBlank}
-+ link: String {URL}
++ linkTarget: String {URL}
+
 
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -244,10 +247,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>525</y>
-      <w>70</w>
-      <h>21</h>
+      <x>440</x>
+      <y>825</y>
+      <w>110</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
@@ -255,10 +258,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>287</x>
-      <y>504</y>
-      <w>105</w>
-      <h>49</h>
+      <x>286</x>
+      <y>792</y>
+      <w>165</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>Note..
 bg=blue
@@ -269,10 +272,10 @@ Price must be positive</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>196</x>
-      <y>609</y>
-      <w>196</w>
-      <h>98</h>
+      <x>154</x>
+      <y>990</y>
+      <w>308</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>Note..
 bg=blue
@@ -289,12 +292,30 @@ full name.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>651</y>
-      <w>70</w>
-      <h>21</h>
+      <x>451</x>
+      <y>1056</y>
+      <w>99</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>572</y>
+      <w>352</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Currency
+--
++ currency: String {NotBlank}
++ isSystemCurrency: boolean {NotNull}
+
+
+bg=green</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
