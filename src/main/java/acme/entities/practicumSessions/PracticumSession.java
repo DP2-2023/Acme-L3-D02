@@ -1,5 +1,5 @@
 
-package acme.entities.sessions;
+package acme.entities.practicumSessions;
 
 import java.beans.Transient;
 import java.util.Date;
@@ -23,7 +23,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Session extends AbstractEntity {
+public class PracticumSession extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
