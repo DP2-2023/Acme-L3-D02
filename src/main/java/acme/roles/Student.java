@@ -1,15 +1,11 @@
 
 package acme.roles;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
-
-import com.fasterxml.jackson.annotation.JsonFormat.Features;
 
 import acme.framework.data.AbstractRole;
 import lombok.Getter;
@@ -30,11 +26,11 @@ public class Student extends AbstractRole {
 
 	@NotBlank
 	@Length(max = 100)
-	protected List<Features>	strongFeatures;
+	protected String			strongFeatures;
 
 	@NotBlank
 	@Length(max = 100)
-	protected List<Features>	weakFeatures;
+	protected String			weakFeatures;
 
 	@URL
 	protected String			furtherInformation;

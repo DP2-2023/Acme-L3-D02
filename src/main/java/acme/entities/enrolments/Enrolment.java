@@ -1,5 +1,5 @@
 
-package entities.enrolments;
+package acme.entities.enrolments;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,7 +23,7 @@ public class Enrolment extends AbstractEntity {
 
 	@Column(unique = true)
 	@NotBlank
-	@Pattern(regexp = "[A-Z]{1,3} [0-9]{3}", message = "{validation.course.code}")
+	@Pattern(regexp = "[A-Z]{1,3} [0-9]{3}", message = "{validation.enrolment.code}")
 	protected String			code;
 
 	@NotBlank
@@ -34,6 +34,6 @@ public class Enrolment extends AbstractEntity {
 	@Length(max = 100)
 	protected String			goals;
 
-	protected Integer			worktime;
+	protected Double			workTime;
 
 }
