@@ -33,7 +33,7 @@ public class Lecture extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			abstractSummary;
+	protected String			abstract$;
 
 	@Positive
 	protected double			learningTime;
