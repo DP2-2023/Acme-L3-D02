@@ -40,11 +40,11 @@ public class Offers extends AbstractEntity {
 	@Length(max = 75)
 	protected String			summary;
 
-	@Temporal(TemporalType.DATE) // o TemporalType.TIMESTAMP, porque se refiere solo a días en principio
-	protected Date				fechaInicioOferta;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				offerStartDate;
 
-	@Temporal(TemporalType.DATE) //OfferEndDate o EndDateOffer?
-	protected Date				fechaFinalOferta;
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				offerEndDate;
 
 	@Min(0)
 	protected Double			price;
